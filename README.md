@@ -1,3 +1,5 @@
 # Better-Ding.github.io
 
-这是陈丁丁的个人简历主页仓库，用于展示教育背景、研究方向、项目经历、论文成果与技能信息。
+这是一个个人简历主页仓库。
+
+访问地址：https://better-ding.github.io/
