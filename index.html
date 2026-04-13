@@ -7,198 +7,264 @@
   <title>陈丁丁 | 个人主页</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-lang="zh">
   <div class="page-shell">
-    <header class="hero" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow">Academic Portfolio</p>
+    <header class="site-header">
+      <div>
+        <p class="site-mark">Curriculum Vitae</p>
         <h1>陈丁丁</h1>
-        <p class="hero-lead">
-          西交利物浦大学数学科学博士研究生，围绕 AI 与金属材料交叉方向开展研究，
-          聚焦铝合金智能建模、性能预测、相图机器学习建模与材料设计方法开发。
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:dingding.chen18@student.xjtlu.edu.cn">联系我</a>
-          <a class="button secondary" href="./resume.pdf" target="_blank" rel="noreferrer">下载简历</a>
-        </div>
       </div>
-      <div class="hero-card">
-        <img src="./assets/profile.jpg" alt="陈丁丁头像" class="profile-photo">
-        <dl class="contact-list">
-          <div>
-            <dt>邮箱</dt>
-            <dd><a href="mailto:dingding.chen18@student.xjtlu.edu.cn">dingding.chen18@student.xjtlu.edu.cn</a></dd>
-          </div>
-          <div>
-            <dt>方向</dt>
-            <dd>AI + 金属材料交叉研究</dd>
-          </div>
-          <div>
-            <dt>主页</dt>
-            <dd><a href="https://better-ding.github.io">better-ding.github.io</a></dd>
-          </div>
-        </dl>
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Language switch">
+          <button class="lang-button is-active" type="button" data-set-lang="zh">中文</button>
+          <button class="lang-button" type="button" data-set-lang="en">EN</button>
+        </div>
+        <a class="download-link" href="./resume.pdf" target="_blank" rel="noreferrer">
+          <span class="lang zh">下载简历</span>
+          <span class="lang en">Download PDF</span>
+        </a>
       </div>
     </header>
 
-    <nav class="section-nav" aria-label="页面导航">
-      <a href="#about">研究方向</a>
-      <a href="#education">教育经历</a>
-      <a href="#experience">工作经历</a>
-      <a href="#projects">项目经历</a>
-      <a href="#publications">论文成果</a>
-    </nav>
+    <main class="layout">
+      <aside class="sidebar">
+        <img src="./assets/profile.jpg" alt="陈丁丁头像" class="profile-photo">
 
-    <main>
-      <section class="panel intro-panel" id="about">
-        <div class="section-heading">
-          <p class="section-kicker">Research Focus</p>
-          <h2>研究方向</h2>
-        </div>
-        <p>依托崔予文教授团队，从事 AI + 金属材料交叉研究：</p>
-        <ul>
-          <li>铝合金人工智能建模与性能预测：结合人工智能与物理机理，开展成分 - 工艺 - 性能关系的定量研究。</li>
-          <li>贵金属相图机器学习建模：开发基于热力学性质的自动化相区标注方法，提升相界精准识别与高效预测能力。</li>
-        </ul>
-      </section>
+        <section class="card">
+          <h2>
+            <span class="lang zh">基本信息</span>
+            <span class="lang en">Profile</span>
+          </h2>
+          <dl class="info-list">
+            <div>
+              <dt><span class="lang zh">邮箱</span><span class="lang en">Email</span></dt>
+              <dd><a href="mailto:dingding.chen18@student.xjtlu.edu.cn">dingding.chen18@student.xjtlu.edu.cn</a></dd>
+            </div>
+            <div>
+              <dt><span class="lang zh">方向</span><span class="lang en">Focus</span></dt>
+              <dd>
+                <span class="lang zh">AI + 金属材料交叉研究</span>
+                <span class="lang en">AI for metallic materials</span>
+              </dd>
+            </div>
+            <div>
+              <dt><span class="lang zh">主页</span><span class="lang en">Website</span></dt>
+              <dd><a href="https://better-ding.github.io/">better-ding.github.io</a></dd>
+            </div>
+          </dl>
+        </section>
 
-      <section class="panel" id="education">
-        <div class="section-heading">
-          <p class="section-kicker">Education</p>
-          <h2>教育经历</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2025.01 - 至今</div>
-            <div class="timeline-body">
+        <section class="card">
+          <h2>
+            <span class="lang zh">教育背景</span>
+            <span class="lang en">Education</span>
+          </h2>
+          <div class="stack-list">
+            <article>
+              <p class="item-date">2025.01 - <span class="lang zh">至今</span><span class="lang en">Present</span></p>
               <h3>西交利物浦大学</h3>
-              <p>数学科学，博士</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2022.09 - 2024.06</div>
-            <div class="timeline-body">
+              <p><span class="lang zh">数学科学，博士</span><span class="lang en">PhD in Mathematical Sciences</span></p>
+            </article>
+            <article>
+              <p class="item-date">2022.09 - 2024.06</p>
               <h3>西交利物浦大学</h3>
-              <p>人机交互，硕士</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2018.09 - 2022.06</div>
-            <div class="timeline-body">
+              <p><span class="lang zh">人机交互，硕士</span><span class="lang en">MSc in Human-Computer Interaction</span></p>
+            </article>
+            <article>
+              <p class="item-date">2018.09 - 2022.06</p>
               <h3>西交利物浦大学</h3>
-              <p>信息与计算科学，本科</p>
-            </div>
-          </article>
-        </div>
-      </section>
+              <p><span class="lang zh">信息与计算科学，本科</span><span class="lang en">BSc in Information and Computing Science</span></p>
+            </article>
+          </div>
+        </section>
+      </aside>
 
-      <section class="panel" id="experience">
-        <div class="section-heading">
-          <p class="section-kicker">Experience</p>
-          <h2>工作经历</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2021.06 - 2021.10</div>
-            <div class="timeline-body">
-              <h3>西安热工研究院有限公司 <span>软件工程师</span></h3>
-              <ul>
-                <li>参与电厂运行数据实时监控系统的开发与测试，协助开发数据库模块，实现设备状态监测功能。</li>
-                <li>参与系统运维，确保系统的稳定性和可靠性，进行日常监控、故障排查及系统优化。</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
+      <section class="content">
+        <section class="card intro-card">
+          <p class="section-label">
+            <span class="lang zh">研究概述</span>
+            <span class="lang en">Overview</span>
+          </p>
+          <p class="lead lang zh">
+            西交利物浦大学数学科学博士研究生，围绕 AI 与金属材料交叉方向开展研究，
+            聚焦铝合金智能建模、性能预测、相图机器学习建模与材料设计方法开发。
+          </p>
+          <p class="lead lang en">
+            PhD student in Mathematical Sciences at Xi'an Jiaotong-Liverpool University, working at the intersection of AI and metallic materials, with a focus on intelligent modeling, property prediction, phase-boundary learning, and data-driven materials design.
+          </p>
+        </section>
 
-      <section class="panel" id="projects">
-        <div class="section-heading">
-          <p class="section-kicker">Selected Projects</p>
-          <h2>项目经历</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-meta">
-              <span>2025.01 - 2025.06</span>
-              <span>铝合金性能预测</span>
+        <section class="card">
+          <div class="section-head">
+            <h2><span class="lang zh">研究方向</span><span class="lang en">Research Interests</span></h2>
+          </div>
+          <ul class="detail-list">
+            <li>
+              <span class="lang zh">铝合金人工智能建模与性能预测：结合人工智能与物理机理，开展成分 - 工艺 - 性能关系的定量研究。</span>
+              <span class="lang en">AI modeling and property prediction for aluminum alloys, integrating machine learning with physics-informed understanding of composition, process, and property relationships.</span>
+            </li>
+            <li>
+              <span class="lang zh">贵金属相图机器学习建模：开发基于热力学性质的自动化相区标注方法，提升相界精准识别与高效预测能力。</span>
+              <span class="lang en">Machine-learning modeling of phase diagrams in precious-metal systems, with automated phase-region labeling methods based on thermodynamic properties.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <h2><span class="lang zh">工作经历</span><span class="lang en">Professional Experience</span></h2>
+          </div>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>
+                <span class="lang zh">西安热工研究院有限公司</span>
+                <span class="lang en">Xi'an Thermal Power Research Institute Co., Ltd.</span>
+              </h3>
+              <span class="item-date">2021.06 - 2021.10</span>
             </div>
-            <h3>Al-Mg-Si 合金 (6xxx 系列) 机械性能预测</h3>
-            <ul>
-              <li>负责 6 系铝合金力学性能的机器学习建模与预测，重点研究 Mg 和 Si 元素对材料性能强化机制的影响。</li>
+            <p class="entry-role">
+              <span class="lang zh">软件工程师</span>
+              <span class="lang en">Software Engineer</span>
+            </p>
+            <ul class="detail-list">
+              <li>
+                <span class="lang zh">参与电厂运行数据实时监控系统的开发与测试，协助开发数据库模块，实现设备状态监测功能。</span>
+                <span class="lang en">Contributed to the development and testing of a real-time power-plant monitoring system and helped build database modules for equipment condition tracking.</span>
+              </li>
+              <li>
+                <span class="lang zh">参与系统运维，确保系统稳定性和可靠性，进行日常监控、故障排查及系统优化。</span>
+                <span class="lang en">Supported operations and maintenance work, including daily monitoring, troubleshooting, and system optimization to ensure reliability.</span>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <h2><span class="lang zh">项目经历</span><span class="lang en">Selected Projects</span></h2>
+          </div>
+
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Al-Mg-Si <span class="lang zh">合金（6xxx 系列）机械性能预测</span><span class="lang en">Alloy Mechanical Property Prediction</span></h3>
+              <span class="item-date">2025.01 - 2025.06</span>
+            </div>
+            <ul class="detail-list">
+              <li>
+                <span class="lang zh">负责 6 系铝合金力学性能的机器学习建模与预测，重点研究 Mg 和 Si 元素对材料性能强化机制的影响。</span>
+                <span class="lang en">Built machine-learning models to predict mechanical properties of 6xxx aluminum alloys, with emphasis on the strengthening effects of Mg and Si.</span>
+              </li>
             </ul>
           </article>
 
-          <article class="project-card">
-            <div class="project-meta">
-              <span>2025.07 - 2025.12</span>
-              <span>材料设计方法 + 软件开发</span>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>
+                <span class="lang zh">基于机器学习模型的材料设计方法及应用软件开发（省实验室重大专项）</span>
+                <span class="lang en">Materials Design Methods and Software Development Based on Machine Learning Models</span>
+              </h3>
+              <span class="item-date">2025.07 - 2025.12</span>
             </div>
-            <h3>基于机器学习模型的材料设计方法及应用软件开发（省实验室重大专项）</h3>
-            <ul>
-              <li>负责多元贵金属体系相边界的机器学习方法构建，验证机器学习在复杂多元体系中的可靠性和实用性。</li>
-              <li>参与项目进展及科技报告编写，相关研究成果形成英文论文，本人为第一作者，目前在投。</li>
+            <ul class="detail-list">
+              <li>
+                <span class="lang zh">负责多元贵金属体系相边界的机器学习方法构建，验证机器学习在复杂多元体系中的可靠性和实用性。</span>
+                <span class="lang en">Developed machine-learning methods for phase-boundary modeling in multicomponent precious-metal systems and evaluated their practical reliability.</span>
+              </li>
+              <li>
+                <span class="lang zh">参与项目进展及科技报告编写，相关研究成果形成英文论文，本人为第一作者，目前在投。</span>
+                <span class="lang en">Contributed to project reporting and manuscript preparation, resulting in an English paper with first authorship.</span>
+              </li>
             </ul>
           </article>
 
-          <article class="project-card">
-            <div class="project-meta">
-              <span>2025.07 - 至今</span>
-              <span>多保真数据融合 + 关键构件研究</span>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>
+                <span class="lang zh">基于集成计算材料工程的高端装备材料和关键构件研发（国家科技重大专项）</span>
+                <span class="lang en">Advanced Materials and Key Components via Integrated Computational Materials Engineering</span>
+              </h3>
+              <span class="item-date">2025.07 - <span class="lang zh">至今</span><span class="lang en">Present</span></span>
             </div>
-            <h3>基于集成计算材料工程的高端装备材料和关键构件研发（国家科技重大专项）</h3>
-            <ul>
-              <li>负责项目中多保真数据融合与机器学习算法的开发，分析合金材料成分 - 组织 - 性能的内在关联机制和影响规律。</li>
+            <ul class="detail-list">
+              <li>
+                <span class="lang zh">负责项目中多保真数据融合与机器学习算法的开发，分析合金材料成分 - 组织 - 性能的内在关联机制和影响规律。</span>
+                <span class="lang en">Worked on multi-fidelity data fusion and machine-learning algorithms to analyze composition-structure-property relationships in alloy systems.</span>
+              </li>
             </ul>
           </article>
-        </div>
-      </section>
+        </section>
 
-      <section class="panel" id="publications">
-        <div class="section-heading">
-          <p class="section-kicker">Publications</p>
-          <h2>论文成果</h2>
-        </div>
-        <div class="publication-list">
-          <article>
-            <p>
+        <section class="card">
+          <div class="section-head">
+            <h2><span class="lang zh">科研成果</span><span class="lang en">Publications</span></h2>
+          </div>
+          <ol class="publication-list">
+            <li>
               Yutong Yang, Zhongyuan Qiu, Zhen Zheng, Liangxi Pu, <strong>Dingding Chen</strong>, Jiang Zheng, Ruijie Zhang, Bo Zhang, Shiyao Huang.
               <em>AI-enabled properties distribution prediction for high-pressure die casting Al-Si alloy.</em>
               Advances in Manufacturing, 12.3(2024) 591-602.
               <a href="https://doi.org/10.1007/s40436-024-00485-1" target="_blank" rel="noreferrer">DOI</a>
-            </p>
-          </article>
-          <article>
-            <p>
+            </li>
+            <li>
               Bincan Deng, Fernando Lopez Lasaosa, <strong>Dingding Chen</strong>, Yiyan He, Chen Xuan, Yuwen Cui, Manuel Doblare.
               <em>Transfer Learning-Enabled Viscosity Prediction for HAMA/GelMA Hybrid Hydrogels.</em>
               Materials Today Communications, 47(2025) 113018.
               <a href="https://doi.org/10.1016/j.mtcomm.2025.113018" target="_blank" rel="noreferrer">DOI</a>
-            </p>
-          </article>
-          <article>
-            <p>
+            </li>
+            <li>
               <strong>Dingding Chen</strong>, Guanglong Xu, Bincan Deng, Fuwen Chen, Jiheng Fang, Zhuo Wang, Chen Xuan, Yuwen Cui, Aimin Zhang.
               <em>Uncertainties in Labeling and Sampling of Activity Derivatives to Determine Equilibrium Phase Boundary: A Comparative Machine Learning Study.</em>
-              Submitted to Scripta Materialia, 2026.
-            </p>
-          </article>
-          <article>
-            <p>
+              <span class="lang zh">已投稿至 Scripta Materialia, 2026.</span>
+              <span class="lang en">Submitted to Scripta Materialia, 2026.</span>
+            </li>
+            <li>
               <strong>Dingding Chen</strong>, Tong Shen, Bincan Deng, Guanglong Xu, Fuwen Chen, Wenbiao Zhou, Chen Xuan, Yuwen Cui.
               <em>Prediction of micromechanical properties in Al-Mg-Si alloys via mechanism-informed machine learning.</em>
-              To be submitted to Journal of Materials Research and Technology, 2026.
-            </p>
-          </article>
-          <article>
-            <p>
+              <span class="lang zh">拟投稿至 Journal of Materials Research and Technology, 2026.</span>
+              <span class="lang en">To be submitted to Journal of Materials Research and Technology, 2026.</span>
+            </li>
+            <li>
               <strong>Dingding Chen</strong>, Yang Zha, Haitao Bu, Yuwen Cui.
               <em>Applications of Machine Learning in Steels R&amp;D and Manufacturing.</em>
-              To be submitted to Journal of Iron and Steel Research International, 2026.
-            </p>
-          </article>
-        </div>
+              <span class="lang zh">拟投稿至 Journal of Iron and Steel Research International, 2026.</span>
+              <span class="lang en">To be submitted to Journal of Iron and Steel Research International, 2026.</span>
+            </li>
+          </ol>
+        </section>
       </section>
     </main>
   </div>
+
+  <script>
+    (function () {
+      var storageKey = "resume-lang";
+      var body = document.body;
+      var buttons = document.querySelectorAll("[data-set-lang]");
+
+      function setLang(lang) {
+        body.setAttribute("data-lang", lang);
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        buttons.forEach(function (button) {
+          button.classList.toggle("is-active", button.getAttribute("data-set-lang") === lang);
+        });
+        try {
+          localStorage.setItem(storageKey, lang);
+        } catch (error) {}
+      }
+
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          setLang(button.getAttribute("data-set-lang"));
+        });
+      });
+
+      try {
+        var stored = localStorage.getItem(storageKey);
+        if (stored === "zh" || stored === "en") {
+          setLang(stored);
+        }
+      } catch (error) {}
+    })();
+  </script>
 </body>
 </html>
