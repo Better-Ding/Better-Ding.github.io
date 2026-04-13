@@ -1,13 +1,14 @@
 :root {
-  --bg: #f5f5f2;
-  --surface: #ffffff;
-  --surface-soft: #fafaf8;
-  --line: #d8d9d3;
-  --text: #1f2421;
-  --muted: #66706a;
-  --accent: #284b63;
-  --accent-soft: #edf3f6;
-  --shadow: 0 12px 30px rgba(31, 36, 33, 0.05);
+  --bg: #e7efe9;
+  --bg-wash: #f6f3ea;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-soft: rgba(248, 250, 246, 0.92);
+  --line: #cfd8d0;
+  --text: #18201b;
+  --muted: #627067;
+  --accent: #295c52;
+  --accent-soft: #e5f0ec;
+  --shadow: 0 18px 40px rgba(24, 32, 27, 0.08);
 }
 
 * {
@@ -22,7 +23,10 @@ body {
   margin: 0;
   color: var(--text);
   font-family: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(41, 92, 82, 0.14), transparent 26%),
+    radial-gradient(circle at right 20%, rgba(214, 181, 120, 0.16), transparent 22%),
+    linear-gradient(180deg, var(--bg-wash) 0%, var(--bg) 100%);
   line-height: 1.75;
 }
 
@@ -58,8 +62,9 @@ a:hover {
 
 .site-header h1 {
   margin: 0;
-  font-size: clamp(2.4rem, 5vw, 4rem);
-  line-height: 1.05;
+  font-size: clamp(3.4rem, 8vw, 5.8rem);
+  line-height: 0.98;
+  letter-spacing: 0.02em;
 }
 
 .header-actions {
@@ -116,6 +121,7 @@ a:hover {
   background: var(--surface);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
 }
 
 .profile-photo {
@@ -136,7 +142,8 @@ a:hover {
 
 .card h2 {
   margin-bottom: 16px;
-  font-size: 1.2rem;
+  font-size: 1.02rem;
+  letter-spacing: 0.04em;
 }
 
 .info-list {
@@ -203,7 +210,7 @@ a:hover {
 
 .lead {
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 1.12rem;
 }
 
 .section-head {
@@ -227,7 +234,8 @@ a:hover {
 }
 
 .entry-top h3 {
-  font-size: 1.12rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .entry-role {
