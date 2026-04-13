@@ -68,8 +68,9 @@ a:hover {
 }
 
 .site-header h1 .lang.en {
-  font-size: clamp(1.9rem, 3vw, 2.3rem);
+  font-size: clamp(2.6rem, 6vw, 4rem);
   letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .header-actions {
